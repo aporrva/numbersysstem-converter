@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "brand": "NumberConverter",
+    "logo": "https://img.icons8.com/ios-filled/50/000000/calculator.png",
+    "links": [
+      { "name": "Converter", "href": "#" },
+      { "name": "About", "href": "#" },
+      { "name": "Contact", "href": "#" }
+    ]
+  },
+  "hero": {
+    "title": "Universal Number System Converter",
+    "subtitle": "Convert any number between different number systems instantly. Binary, Decimal, Hexadecimal, Octal, and custom bases - all in one powerful tool.",
+    "buttonText": "▶ Start Converting"
+  },
+  "section": {
+    "title": "Number System Converter",
+    "subtitle": "Enter any number and convert it to any base system"
+  }
+}

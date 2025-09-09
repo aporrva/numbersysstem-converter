@@ -1,0 +1,62 @@
+{
+  "app": {
+    "name": "NumberSystem",
+    "navbar": ["Home", "About", "Help"],
+    "title": "Number System Converter",
+    "subtitle": "Convert numbers between different bases instantly. Support for Binary, Octal, Decimal, Hexadecimal and custom bases."
+  },
+  "form": {
+    "inputSection": {
+      "title": "Input Number",
+      "fields": {
+        "fromBase": {
+          "label": "From Base",
+          "default": "Binary (Base 2)"
+        },
+        "enterNumber": {
+          "label": "Enter Number",
+          "placeholder": "Enter your number here...",
+          "note": "Enter a valid number in the selected base"
+        }
+      },
+      "button": {
+        "text": "Convert Number"
+      }
+    },
+    "outputSection": {
+      "title": "Output Results",
+      "fields": {
+        "toBase": {
+          "label": "To Base",
+          "default": "Binary (Base 2)"
+        },
+        "convertedNumber": {
+          "label": "Converted Number",
+          "placeholder": "Result will appear here...",
+          "note": "Click the copy icon to copy result"
+        }
+      }
+    }
+  },
+  "quickConversions": {
+    "title": "Quick Conversions",
+    "options": [
+      {
+        "label": "Binary",
+        "value": "-"
+      },
+      {
+        "label": "Octal",
+        "value": "-"
+      },
+      {
+        "label": "Decimal",
+        "value": "-"
+      },
+      {
+        "label": "Hexadecimal",
+        "value": "-"
+      }
+    ]
+  }
+}
