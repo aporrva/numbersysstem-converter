@@ -44,7 +44,7 @@ export default function Converter() {
     };
 
     // input validator based on fromBase
-    const validateInput = (value) => {
+    const validateInput = (value:any) => {
         let baseFrom = 10;
         if (fromBase.includes("Binary")) baseFrom = 2;
         if (fromBase.includes("Octal")) baseFrom = 8;

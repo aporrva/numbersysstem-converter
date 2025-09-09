@@ -1,6 +1,5 @@
 
 import data from "./home.json";
-import React from "react";
 export default function Home() {
   return (
     <div className="font-sans w-full">
@@ -27,7 +26,9 @@ export default function Home() {
       <section className="bg-gradient-to-r from-purple-500 to-blue-400 text-white py-32 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">{data.hero.title}</h1>
         <p className="text-lg md:text-xl mb-6 max-w-xl mx-auto">{data.hero.subtitle}</p>
-        <button className="bg-white text-purple-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
+        <button onClick={()=>{
+          
+        }} className="bg-white text-purple-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
           {data.hero.buttonText}
         </button>
       </section>
