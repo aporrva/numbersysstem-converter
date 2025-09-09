@@ -1,0 +1,17 @@
+{
+  "brand": {
+    "name": "NumConverter",
+    "description": "Convert numbers between Binary, Decimal, Hexadecimal, Octal, and custom bases — all in one simple tool."
+  },
+  "links": [
+    { "name": "Home", "href": "/" },
+    { "name": "Converter", "href": "/converter" 
+  },{"name":"Contact", "href":"/contact"}
+   
+  ],
+  "contactInfo": {
+    "address": "Kotdwara, Uttarakhand, India",
+    "email": "apurva.rajgopal@gmail.com"
+  },
+  "footerText": "All rights reserved."
+}

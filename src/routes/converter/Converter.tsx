@@ -1,10 +1,11 @@
 
 import data from "./converter.json";
 import { useState } from "react";
+import Contact from "../contact-footer/Contact";
 
 export default function Converter() {
     const [inputNumber, setInputNumber] = useState("");
-    const [result, setResult] = useState("");
+    const [result, setResult] = useState("Output will be displaye here..");
     const [fromBase, setFromBase] = useState("Decimal (Base 10)");
     const [toBase, setToBase] = useState("Binary (Base 2)");
     const [customFromBase, setCustomFromBase] = useState("");
@@ -70,10 +71,10 @@ export default function Converter() {
             <nav className="flex justify-between items-center px-6 py-4 shadow-sm bg-white">
                 <div className="font-bold text-lg">{data.app.name}</div>
                 <div className="flex gap-6">
-                    {data.app.navbar.map((item, idx) => (
-                        <button key={idx} className="hover:text-blue-600">
-                            {item}
-                        </button>
+                    {data.app.navbar.map((item,idk) => (
+                        <a href={item.href} key={idk} className="hover:text-blue-600">
+                            {item.name}
+                        </a>
                     ))}
                 </div>
             </nav>
@@ -90,7 +91,7 @@ export default function Converter() {
             </header>
 
             {/* Input Section */}
-            <div className="bg-white rounded-2xl shadow-md p-4 mt-10 max-w-2xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-md mb-10 p-4 mt-10 max-w-2xl mx-auto">
                 <div className="text-left">
                     <h2 className="font-semibold mb-4">{data.form.inputSection.title}</h2>
                     <div className="grid grid-cols-2 gap-6 mb-4">
@@ -202,7 +203,7 @@ export default function Converter() {
         </button> */}
 
                 {/* Output Section */}
-                <div className="gap-4 mt-4">
+                <div className="gap-4 mt-4 mb-8">
                     <div>
                         <label className="block mb-1">
                             {/* {data.form.outputSection.fields.convertedNumber.label} */}
@@ -224,45 +225,7 @@ export default function Converter() {
                 </div>
             </div>
                
-                <footer className="bg-gray-900 text-gray-300 py-12">
-                    <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                        {/* Brand Info */}
-                        <div>
-                            <h2 className="text-xl font-bold text-white mb-4">NumConverter</h2>
-                            <p className="text-gray-400">
-                                Convert numbers between Binary, Decimal, Hexadecimal, Octal, and custom bases —
-                                all in one simple tool.
-                            </p>
-                        </div>
-
-                        {/* Quick Links */}
-                        <div>
-                            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-                            <ul className="space-y-2">
-                                <li><a href="/" className="hover:text-purple-400">Home</a></li>
-                                <li><a href="/converter" className="hover:text-purple-400">Converter</a></li>
-                                <li><a href="/features" className="hover:text-purple-400">Features</a></li>
-                                <li><a href="/about" className="hover:text-purple-400">About</a></li>
-                                <li><a href="/contact" className="hover:text-purple-400">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        {/* Contact Info */}
-                        <div>
-                            <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
-                            <p className="text-gray-400">📍 123 NumConverter St, Tech City, India</p>
-                            <p className="text-gray-400">📞 +91 98765 43210</p>
-                            <p className="text-gray-400">✉️ support@numconverter.com</p>
-                        </div>
-                    </div>
-
-                    {/* Bottom */}
-                    <div className="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
-                        © {new Date().getFullYear()} NumConverter. All rights reserved.
-                    </div>
-                </footer>
-                
+         <Contact/>       
 
         </div>
     );

@@ -1,7 +1,11 @@
 {
   "app": {
     "name": "NumberSystem",
-    "navbar": ["Home", "About", "Help"],
+    "navbar": [{"name":"Home",
+    "href": "/"},{
+      "name":"contact", "href":"/contact"
+    }],
+    
     "title": "Number System Converter",
     "subtitle": "Convert numbers between different bases instantly. Support for Binary, Octal, Decimal, Hexadecimal and custom bases."
   },
