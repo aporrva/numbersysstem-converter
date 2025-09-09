@@ -1,13 +1,8 @@
-import React from "react";
+
 import contactData from "./contact.json";
 
-type ContactData = {
-  brand: { name: string; description: string };
-  links: { name: string; href: string }[];
-  contactInfo: { address: string; phone: string; email: string };
-};
 
-const data = contactData as ContactData;
+const data = contactData 
 
 export default function Contact() {
   return (
@@ -27,12 +22,7 @@ export default function Contact() {
           <p className="text-gray-600">{data.contactInfo.address}</p>
         </div>
 
-        {/* Phone Card */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition">
-          <div className="text-purple-600 text-4xl mb-4">📞</div>
-          <h2 className="text-xl font-semibold mb-2">Phone</h2>
-          <p className="text-gray-600">{data.contactInfo.phone}</p>
-        </div>
+       
 
         {/* Email Card */}
         <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition">

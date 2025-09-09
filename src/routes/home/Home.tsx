@@ -95,7 +95,7 @@ export default function Home() {
             Why Choose {data.navbar.brand}?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {(data.advantages as Advantage[]).map((adv, idx) => (
+            {(data.advantages).map((adv, idx) => (
               <div
                 key={idx}
                 className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition p-6"
