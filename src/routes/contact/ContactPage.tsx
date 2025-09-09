@@ -4,7 +4,7 @@ import contactData from "./contact.json";
 
 const data = contactData 
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}

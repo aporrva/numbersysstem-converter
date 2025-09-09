@@ -1,7 +1,7 @@
 
 import data from "./converter.json";
 import { useState } from "react";
-import Contact from "../contact-footer/Contact";
+import Contact from "../contact/Contact";
 
 export default function Converter() {
     const [inputNumber, setInputNumber] = useState("");

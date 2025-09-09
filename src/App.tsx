@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./routes/home/Home";
 import Converter from "./routes/converter/Converter";
-import ContactPage from "./routes/contact-footer/Contact-page";
+import ContactPage from "./routes/contact/ContactPage";
 
 export default function App() {
   return ( <Router>

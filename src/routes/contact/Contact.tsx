@@ -1,4 +1,4 @@
-import React from "react";
+
 import contactData from "./contact.json";
 
 // Optional: light types so TS knows what's in the JSON

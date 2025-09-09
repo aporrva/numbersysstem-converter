@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import data from "./home.json";
-import Contact from "../contact-footer/Contact";
+import Contact from "../contact/Contact";
 import { useState } from "react";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
