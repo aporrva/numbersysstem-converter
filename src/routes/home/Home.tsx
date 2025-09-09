@@ -82,7 +82,7 @@ export default function Home() {
       <section className="bg-gradient-to-r from-purple-500 to-blue-400 text-white py-32 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">{data.hero.title}</h1>
         <p className="text-lg md:text-xl mb-6 max-w-xl mx-auto">{data.hero.subtitle}</p>
-        <a href="/converter" className="bg-white text-purple-600 font-semibold px-6 py-3 mt-6 rounded-lg shadow hover:bg-gray-100 transition">
+        <a href = "/converter" className="bg-white text-purple-600 font-semibold px-6 py-3 mt-6 rounded-lg shadow hover:bg-gray-100 transition">
           {data.hero.buttonText}
         </a>
       </section>
